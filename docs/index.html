@@ -170,13 +170,13 @@
           </select></div>
           <div id="categories" class="categories" role="group" aria-label="Filter by category">
 <!-- CATEGORIES:START -->
-<button type="button" class="category active" data-category="" aria-pressed="true">All tools <span>48</span></button>
+<button type="button" class="category active" data-category="" aria-pressed="true">All tools <span>54</span></button>
 <button type="button" class="category" data-category="Trading Agents" aria-pressed="false">Trading Agents <span>6</span></button>
 <button type="button" class="category" data-category="Jev Trading" aria-pressed="false">Jev Trading <span>6</span></button>
-<button type="button" class="category" data-category="Broker &amp; Exchange Integrations" aria-pressed="false">Broker &amp; Exchange Integrations <span>4</span></button>
-<button type="button" class="category" data-category="MCP Servers &amp; Agent Skills" aria-pressed="false">MCP Servers &amp; Agent Skills <span>12</span></button>
+<button type="button" class="category" data-category="Broker &amp; Exchange Integrations" aria-pressed="false">Broker &amp; Exchange Integrations <span>8</span></button>
+<button type="button" class="category" data-category="MCP Servers &amp; Agent Skills" aria-pressed="false">MCP Servers &amp; Agent Skills <span>13</span></button>
 <button type="button" class="category" data-category="Prediction Markets" aria-pressed="false">Prediction Markets <span>5</span></button>
-<button type="button" class="category" data-category="Research &amp; Backtesting" aria-pressed="false">Research &amp; Backtesting <span>8</span></button>
+<button type="button" class="category" data-category="Research &amp; Backtesting" aria-pressed="false">Research &amp; Backtesting <span>9</span></button>
 <button type="button" class="category" data-category="Data, Wallets &amp; Risk Infrastructure" aria-pressed="false">Data, Wallets &amp; Risk Infrastructure <span>7</span></button>
 <!-- CATEGORIES:END -->
           </div>
@@ -184,7 +184,7 @@
         <noscript><p>All tools are listed below. Enable JavaScript to search and filter.</p></noscript>
         <div class="results-heading"><p id="result-count" role="status" aria-live="polite" aria-atomic="true">
 <!-- COUNT:START -->
-48 tools
+54 tools
 <!-- COUNT:END -->
         </p><button id="reset" type="button" hidden>Clear filters</button></div>
         <p class="directory-note">A curated selection from the full list. Modes reflect documented capabilities; “not listed” means they have not been recorded here.</p>
@@ -211,6 +211,13 @@
   <div class="tags" aria-label="Project attributes"><span class="tag tag--muted">Mode not listed</span></div>
 
 </article>
+<article class="project" data-category="Broker &amp; Exchange Integrations" data-markets="[&quot;Equities&quot;, &quot;Options&quot;, &quot;Crypto &amp; DeFi&quot;]" data-modes="[&quot;research&quot;, &quot;paper&quot;, &quot;dry-run&quot;, &quot;live&quot;]" data-search="Alpaca CLI Official agent-oriented CLI for Alpaca trading, account management, and market data; JSON output and paper trading by default. Broker &amp; Exchange Integrations stocks crypto options cli alpaca experimental Go">
+  <p class="project-category">Broker &amp; Exchange Integrations</p>
+  <h3><a href="https://github.com/alpacahq/cli">Alpaca CLI<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official agent-oriented CLI for Alpaca trading, account management, and market data; JSON output and paper trading by default.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">CLI</span><span class="tag">Research</span><span class="tag">Paper</span><span class="tag">Dry-run</span><span class="tag">Live</span><span class="tag tag--accent">Official</span><span class="tag">Experimental</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Alpha Preview: commands and output may change. Requires Alpaca account/authentication and relevant data entitlements. OAuth is paper-only; live execution requires API keys and explicit opt-in. Order dry-run previews do not submit orders or simulate fills. Commands execute without interactive confirmation. Documentation review only.</p><p><a href="https://github.com/alpacahq/cli/blob/main/LICENSE">Apache-2.0 license source</a> · Reviewed 2026-10-11</p></details>
+</article>
 <article class="project" data-category="Broker &amp; Exchange Integrations" data-markets="[&quot;Equities&quot;, &quot;Options&quot;, &quot;Crypto &amp; DeFi&quot;]" data-modes="[&quot;paper&quot;, &quot;live&quot;]" data-search="Alpaca MCP Server Official MCP server for stock, ETF, crypto, and options tools; paper trading by default with an explicit live setting. Broker &amp; Exchange Integrations us-equities options crypto mcp broker official Python">
   <p class="project-category">Broker &amp; Exchange Integrations</p>
   <h3><a href="https://github.com/alpacahq/alpaca-mcp-server">Alpaca MCP Server<span aria-hidden="true"> ↗</span></a></h3>
@@ -232,12 +239,33 @@
   <div class="tags" aria-label="Project attributes"><span class="tag">Skills</span><span class="tag">Live</span><span class="tag tag--accent">Official</span></div>
 <details class="project-details"><summary>Access &amp; license</summary><p>Hosted product used through Binance Agent Skills. Supported actions, assets, chains, and availability depend on the account and product terms.</p><p>Hosted service · Reviewed 2026-09-27</p></details>
 </article>
-<article class="project" data-category="MCP Servers &amp; Agent Skills" data-markets="[&quot;Crypto &amp; DeFi&quot;]" data-modes="[]" data-search="Binance MCP Unofficial Binance MCP server for trading AI agents. MCP Servers &amp; Agent Skills crypto cex mcp binance trading-api ">
+<article class="project" data-category="MCP Servers &amp; Agent Skills" data-markets="[&quot;Crypto &amp; DeFi&quot;]" data-modes="[]" data-search="Binance MCP Community MCP adapter for Binance exchange API access; separate from Binance official hosted MCP. MCP Servers &amp; Agent Skills crypto cex mcp binance trading-api ">
   <p class="project-category">MCP Servers &amp; Agent Skills</p>
   <h3><a href="https://github.com/nicepkg/binance-mcp">Binance MCP<span aria-hidden="true"> ↗</span></a></h3>
-  <p class="project-description">Unofficial Binance MCP server for trading AI agents.</p>
+  <p class="project-description">Community MCP adapter for Binance exchange API access; separate from Binance official hosted MCP.</p>
   <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag tag--muted">Mode not listed</span></div>
 
+</article>
+<article class="project" data-category="Broker &amp; Exchange Integrations" data-markets="[&quot;Crypto &amp; DeFi&quot;, &quot;Futures &amp; FX&quot;]" data-modes="[&quot;research&quot;, &quot;live&quot;]" data-search="Binance Official MCP Official hosted MCP for public market data, scoped account queries, and supported orders/transfers within a dedicated Agentic sub-account. Broker &amp; Exchange Integrations crypto cex futures mcp binance hosted ">
+  <p class="project-category">Broker &amp; Exchange Integrations</p>
+  <h3><a href="https://developers.binance.com/en/docs/agent-native/mcp-server/agentic">Binance Official MCP<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official hosted MCP for public market data, scoped account queries, and supported orders/transfers within a dedicated Agentic sub-account.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag">Research</span><span class="tag">Live</span><span class="tag tag--accent">Official</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Hosted service; no code license is implied. Private access requires authorization, an eligible Binance account, and regional/product availability. Users manually fund an isolated Agentic sub-account. The documentation requires confirmation before writes; no external withdrawal scope is provided. Trading fees and venue requirements apply. Documentation review only.</p><p>Hosted service · Reviewed 2026-10-11</p></details>
+</article>
+<article class="project" data-category="Broker &amp; Exchange Integrations" data-markets="[&quot;Crypto &amp; DeFi&quot;]" data-modes="[&quot;research&quot;, &quot;paper&quot;, &quot;live&quot;]" data-search="Bybit Trading MCP Official Bybit V5 MCP server for market data, orders, positions, account operations, and WebSocket streams; optional testnet. Broker &amp; Exchange Integrations crypto cex mcp bybit websocket TypeScript">
+  <p class="project-category">Broker &amp; Exchange Integrations</p>
+  <h3><a href="https://github.com/bybit-exchange/trading-mcp">Bybit Trading MCP<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official Bybit V5 MCP server for market data, orders, positions, account operations, and WebSocket streams; optional testnet.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag">Research</span><span class="tag">Paper</span><span class="tag">Live</span><span class="tag tag--accent">Official</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Public market tools need no API key. Private tools require a Bybit account and API credentials with selected permissions. Testnet requires separate credentials and BYBIT_TESTNET=true; it is not the default. Testnet is represented as paper mode here. Documentation review only.</p><p><a href="https://github.com/bybit-exchange/trading-mcp/blob/main/LICENSE">MIT license source</a> · Reviewed 2026-10-11</p></details>
+</article>
+<article class="project" data-category="MCP Servers &amp; Agent Skills" data-markets="[&quot;Crypto &amp; DeFi&quot;, &quot;Prediction markets&quot;]" data-modes="[&quot;research&quot;, &quot;paper&quot;, &quot;live&quot;]" data-search="CCXT MCP Official CCXT MCP server for multi-exchange market data, account queries, and explicitly enabled sandbox/demo or live orders. MCP Servers &amp; Agent Skills crypto cex prediction-markets mcp ccxt multi-exchange TypeScript">
+  <p class="project-category">MCP Servers &amp; Agent Skills</p>
+  <h3><a href="https://github.com/ccxt/ccxt/tree/master/mcp">CCXT MCP<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official CCXT MCP server for multi-exchange market data, account queries, and explicitly enabled sandbox/demo or live orders.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag">Research</span><span class="tag">Paper</span><span class="tag">Live</span><span class="tag tag--accent">Official</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Public market data needs no credentials. Account access requires venue credentials; trading, fund transfers, and raw writes are separate opt-in tiers. Live orders require trading: live and an explicit maxOrderValue choice. Sandbox/demo support varies by venue. Documentation review only.</p><p><a href="https://github.com/ccxt/ccxt/blob/master/LICENSE.txt">MIT license source</a> · Reviewed 2026-10-11</p></details>
 </article>
 <article class="project" data-category="Trading Agents" data-markets="[&quot;Crypto &amp; DeFi&quot;, &quot;Prediction markets&quot;]" data-modes="[]" data-search="CloddsBot Self-hosted AI trading agent across Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, and EVM chains. Trading Agents prediction-markets crypto defi cex self-hosted polymarket kalshi hyperliquid binance TypeScript">
   <p class="project-category">Trading Agents</p>
@@ -407,12 +435,26 @@
   <div class="tags" aria-label="Project attributes"><span class="tag">Backtest</span><span class="tag">Paper</span><span class="tag">Live</span><span class="tag">Community</span></div>
 <details class="project-details"><summary>Access &amp; license</summary><p>Supported assets, data access, and execution modes depend on the broker and data provider.</p><p><a href="https://github.com/Lumiwealth/lumibot/blob/master/LICENSE">GPL-3.0 license source</a> · Reviewed 2026-09-12</p></details>
 </article>
+<article class="project" data-category="Broker &amp; Exchange Integrations" data-markets="[&quot;Options&quot;, &quot;Crypto &amp; DeFi&quot;, &quot;Futures &amp; FX&quot;]" data-modes="[&quot;research&quot;, &quot;paper&quot;, &quot;live&quot;]" data-search="OKX Agent Trade Kit Official local MCP, CLI, and skills for OKX market data, spot, perpetuals, futures, options, and trading bots; demo and live profiles. Broker &amp; Exchange Integrations crypto cex options futures mcp cli skills okx TypeScript">
+  <p class="project-category">Broker &amp; Exchange Integrations</p>
+  <h3><a href="https://github.com/okx/agent-trade-kit">OKX Agent Trade Kit<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official local MCP, CLI, and skills for OKX market data, spot, perpetuals, futures, options, and trading bots; demo and live profiles.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag">CLI</span><span class="tag">Skills</span><span class="tag">Research</span><span class="tag">Paper</span><span class="tag">Live</span><span class="tag tag--accent">Official</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Public market tools need no credentials. Private tools require OKX API key, secret, and passphrase with appropriate permissions and venue eligibility. Read-only and module filters are available. Demo support varies by module; grid bots are not supported in demo. Documentation review only.</p><p><a href="https://github.com/okx/agent-trade-kit/blob/github-main/LICENSE">MIT license source</a> · Reviewed 2026-10-11</p></details>
+</article>
 <article class="project" data-category="Trading Agents" data-markets="[&quot;Equities&quot;, &quot;Crypto &amp; DeFi&quot;, &quot;Futures &amp; FX&quot;, &quot;Other&quot;]" data-modes="[]" data-search="OpenAlice AI trading agent covering equities, crypto, commodities, forex, and macro from research to execution and position management. Trading Agents stocks crypto commodities forex macro ai-trading-agent research execution position-management TypeScript">
   <p class="project-category">Trading Agents</p>
   <h3><a href="https://github.com/TraderAlice/OpenAlice">OpenAlice<span aria-hidden="true"> ↗</span></a></h3>
   <p class="project-description">AI trading agent covering equities, crypto, commodities, forex, and macro from research to execution and position management.</p>
   <div class="tags" aria-label="Project attributes"><span class="tag tag--muted">Mode not listed</span></div>
 
+</article>
+<article class="project" data-category="Research &amp; Backtesting" data-markets="[&quot;Equities&quot;, &quot;Crypto &amp; DeFi&quot;, &quot;Other&quot;]" data-modes="[&quot;research&quot;]" data-search="OpenBB Agent Rita Official OpenBB financial research copilot for dashboard data, in-process SQL, cited answers, and dashboard editing; optional companion MCP. Research &amp; Backtesting stocks crypto macro tradfi ai-agent research openbb mcp TypeScript">
+  <p class="project-category">Research &amp; Backtesting</p>
+  <h3><a href="https://github.com/OpenBB-finance/agent-rita">OpenBB Agent Rita<span aria-hidden="true"> ↗</span></a></h3>
+  <p class="project-description">Official OpenBB financial research copilot for dashboard data, in-process SQL, cited answers, and dashboard editing; optional companion MCP.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag">Research</span><span class="tag tag--accent">Official</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Requires an OpenBB Workspace account and an LLM provider key or local Ollama. Data access depends on connected widgets/providers. Optional companion MCP features have separate service/key requirements. This is a research copilot; broker execution is not documented. Documentation review only.</p><p><a href="https://github.com/OpenBB-finance/agent-rita/blob/main/LICENSE">MIT license source</a> · Reviewed 2026-10-11</p></details>
 </article>
 <article class="project" data-category="Data, Wallets &amp; Risk Infrastructure" data-markets="[&quot;Crypto &amp; DeFi&quot;, &quot;Other&quot;]" data-modes="[]" data-search="OpenClaw Open-source AI agent platform with skill system, cron jobs, and multi-channel output. Data, Wallets &amp; Risk Infrastructure crypto defi tradfi ai-agent agent-framework skills automation Node.js">
   <p class="project-category">Data, Wallets &amp; Risk Infrastructure</p>
@@ -505,12 +547,12 @@
   <div class="tags" aria-label="Project attributes"><span class="tag">MCP</span><span class="tag tag--muted">Mode not listed</span></div>
 
 </article>
-<article class="project" data-category="Research &amp; Backtesting" data-markets="[&quot;Equities&quot;, &quot;Other&quot;]" data-modes="[]" data-search="TradingAgents Multi-agent LLM financial trading framework for stock analysis and portfolio management. Research &amp; Backtesting stocks tradfi multi-agent llm stock-analysis portfolio-management Python">
+<article class="project" data-category="Research &amp; Backtesting" data-markets="[&quot;Equities&quot;, &quot;Other&quot;]" data-modes="[&quot;research&quot;, &quot;backtest&quot;]" data-search="TradingAgents Multi-agent financial research framework with parallel analysts, point-in-time backtests, a non-interactive CLI, and HTML reports. Research &amp; Backtesting stocks tradfi multi-agent llm stock-analysis portfolio-management Python">
   <p class="project-category">Research &amp; Backtesting</p>
   <h3><a href="https://github.com/TauricResearch/TradingAgents">TradingAgents<span aria-hidden="true"> ↗</span></a></h3>
-  <p class="project-description">Multi-agent LLM financial trading framework for stock analysis and portfolio management.</p>
-  <div class="tags" aria-label="Project attributes"><span class="tag tag--muted">Mode not listed</span></div>
-
+  <p class="project-description">Multi-agent financial research framework with parallel analysts, point-in-time backtests, a non-interactive CLI, and HTML reports.</p>
+  <div class="tags" aria-label="Project attributes"><span class="tag">Research</span><span class="tag">Backtest</span><span class="tag">Community</span></div>
+<details class="project-details"><summary>Access &amp; license</summary><p>Reviewed against v0.6.0 documentation. Requires LLM/provider access and applicable market-data credentials; costs vary by provider. Research decisions and backtests do not imply broker execution or independently verified returns.</p><p><a href="https://github.com/TauricResearch/TradingAgents/blob/main/LICENSE">Apache-2.0 license source</a> · Reviewed 2026-10-11</p></details>
 </article>
 <article class="project" data-category="Trading Agents" data-markets="[&quot;Equities&quot;, &quot;Crypto &amp; DeFi&quot;, &quot;Other&quot;]" data-modes="[]" data-search="Vibe-Trading Personal trading agent with persistent memory, self-evolving skills, and context compression. Trading Agents stocks crypto tradfi personal-agent memory self-evolving llm Python">
   <p class="project-category">Trading Agents</p>

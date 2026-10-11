@@ -65,14 +65,18 @@ Trading systems that use [TypeSafe AI's Jev](https://typesafe.ai/blog/introducin
 
 ## Broker & Exchange Integrations
 
-### Official broker integrations
+### Official broker and exchange integrations
 
 | Integration | Capabilities and modes | Access |
 |-------------|------------------------|--------|
 | [Alpaca MCP Server](https://github.com/alpacahq/alpaca-mcp-server) | Stocks, ETFs, crypto, and options tools; paper default, explicit live setting | Official, MIT; account/API credentials and data entitlements |
+| [Alpaca CLI](https://github.com/alpacahq/cli) | Official CLI for trading, accounts, and market data; JSON output, paper default, order dry-run, explicit live opt-in | [Apache-2.0](https://github.com/alpacahq/cli/blob/main/LICENSE); Alpha Preview; account/authentication and data entitlements; no interactive confirmations |
 | [Interactive Brokers MCP](https://brokerage.ibkr.com/en/trading/ai-integrations.php) | Hosted account, portfolio, risk, market-data, and trade-instruction tools with user review before submission | Official hosted service; eligible IBKR account and regional availability required |
 | [QuantConnect MCP & Agents](https://www.quantconnect.com/docs/v2/ai-assistance/mcp-server) | Create and update projects, run backtests and optimizations, and deploy algorithms | Official service; remote MCP access and live deployment requirements vary by plan |
 | [Robinhood Agentic Trading](https://robinhood.com/us/en/support/articles/agentic-trading-overview/) | Hosted MCP for portfolio research and orders in a dedicated Agentic account | Official hosted service; eligible account required; read access is broader than trading access |
+| [OKX Agent Trade Kit](https://github.com/okx/agent-trade-kit) | Official local MCP + CLI + skills for market data, spot, derivatives, and bots; read-only, demo and live profiles | [MIT](https://github.com/okx/agent-trade-kit/blob/github-main/LICENSE); private tools require API credentials and venue eligibility; demo support varies by module |
+| [Bybit Trading MCP](https://github.com/bybit-exchange/trading-mcp) | Official V5 MCP for market data, orders, positions, accounts, and WebSocket streams; optional testnet | [MIT](https://github.com/bybit-exchange/trading-mcp/blob/main/LICENSE); public market data is keyless; private tools require API credentials; testnet is opt-in |
+| [Binance Official MCP](https://developers.binance.com/en/docs/agent-native/mcp-server/agentic) | Hosted MCP for market data, scoped account queries, and supported trades/transfers inside an Agentic sub-account; documented confirmation before writes | Official hosted service; eligible account, authorization and regional availability; user-funded sub-account; no external withdrawal scope |
 
 ### DEX & On-Chain Trading
 
@@ -111,13 +115,14 @@ Model Context Protocol servers that provide trading capabilities to AI agents.
 
 | Server | Description | Protocol |
 |--------|-------------|----------|
+| [CCXT MCP](https://github.com/ccxt/ccxt/wiki/MCP) | Official multi-exchange market data and account tools; sandbox/demo and live orders explicitly enabled; [MIT](https://github.com/ccxt/ccxt/blob/master/LICENSE.txt); credentials and venue support vary | MCP |
 | [hyperliquid-mcp](https://github.com/edkdev/hyperliquid-mcp) | Full Hyperliquid trading: orders, positions, market data, bracket orders, agent mode | MCP |
 | [HYPERLIQUID-MCP-Server](https://github.com/6rz6/HYPERLIQUID-MCP-Server) | 8 trading tools for Hyperliquid: market data, account management, analytics | MCP |
 | [perp-cli](https://github.com/hypurrquant/perp-cli) | Multi-DEX perps CLI + MCP (Hyperliquid, Pacifica, Lighter), market data and execution tools | MCP |
 | [CoinGecko MCP](https://docs.coingecko.com/docs/mcp-server) | Official CoinGecko MCP server for price & market data | MCP |
 | [CoinGeckoMCP](https://github.com/BlindVibeDev/CoinGeckoMCP) | Node.js CoinGecko MCP with free + Pro API support | MCP |
 | [mcp-coingecko-server](https://github.com/crazyrabbitLTC/mcp-coingecko-server) | CoinGecko Pro API MCP with OpenAI function calling compatibility | MCP |
-| [Binance MCP](https://github.com/nicepkg/binance-mcp) | Unofficial Binance MCP server for trading AI agents | MCP |
+| [Binance MCP](https://github.com/nicepkg/binance-mcp) | Community Binance API adapter; separate from [Binance official hosted MCP](https://developers.binance.com/en/docs/agent-native/mcp-server/agentic) | MCP |
 | [financekit-mcp](https://github.com/vdalhambra/financekit-mcp) | 17 tools for financial market intelligence: quotes, technicals, analysis | MCP |
 | [polymarket-mcp-server](https://github.com/caiovicentino/polymarket-mcp-server) | Polymarket MCP server with trading, market discovery, monitoring, and safety tools | MCP |
 | [fintool](https://github.com/second-state/fintool) | Rust CLI tools for agentic trading across Hyperliquid, Binance, Coinbase, OKX, Polymarket, and market intelligence | CLI / MCP |
@@ -178,7 +183,7 @@ Research and simulation are distinct from broker execution. Traditional ML/RL an
 
 | Project | Description | Language |
 |---------|-------------|----------|
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | Multi-agent LLM financial trading framework for stock analysis & portfolio management | Python |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | Multi-agent financial research with parallel analysts, point-in-time backtests, automated CLI, and HTML reports; [Apache-2.0](https://github.com/TauricResearch/TradingAgents/blob/main/LICENSE); model/data access required | Python |
 | [Hummingbot](https://github.com/hummingbot/hummingbot) | Open-source crypto market making and trading bot framework | Python |
 | [Freqtrade](https://github.com/freqtrade/freqtrade) | Open-source crypto trading bot with strategy optimization | Python |
 | [Jesse](https://github.com/jesse-ai/jesse) | Advanced crypto trading framework with AI strategy support | Python |
@@ -193,6 +198,7 @@ Research and simulation are distinct from broker execution. Traditional ML/RL an
 
 | Project | Modes / role | License / access |
 |---------|--------------|------------------|
+| [OpenBB Agent Rita](https://github.com/OpenBB-finance/agent-rita) | Official dashboard-data research copilot with SQL, cited answers, and optional companion MCP; no documented broker execution | [MIT](https://github.com/OpenBB-finance/agent-rita/blob/main/LICENSE); OpenBB Workspace account and LLM provider/local Ollama; data and optional services vary |
 | [Dexter](https://github.com/virattt/dexter) | Financial research, tool use, and evaluation; no trading execution | MIT declared in README; no standalone root license found; data/model services may cost extra |
 | [Lumibot](https://github.com/Lumiwealth/lumibot) | Backtesting, paper trading, and live broker execution; Python runtime | GPL-3.0; broker and data-provider requirements vary |
 | [AgenticTrading](https://github.com/Open-Finance-Lab/AgenticTrading) | Experimental LLM-agent lab with backtests, paper workflows, traces, and optional guarded broker execution | Source-available, OpenMDW-1.0; experimental |
